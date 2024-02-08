@@ -1,1 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --text-color: #000000;
+    --bg-color: #fff;
+    --background:
+    linear-gradient(#e7e7e7, #1a1a1a),
+    repeating-linear-gradient(180deg, #d3d3d3, transparent 4px),
+    repeating-linear-gradient(90deg, #d3d3d3, transparent 4px);
+    
+    --header-border: 2px solid #000;
+    --border: 2px solid #000;
+    --hover-color-text: #000000;
+    --main-fonts: "Inter-Flex-Variable";
+    --accent-fonts: "Press Start 2P";
+    --disablet-color: rgba(0, 0, 0, 0.6);
+    --hover-menu-button: rgba(0, 0, 0, 0.6);
+    --focus-color-element:rgba(0, 0, 0, 0.6);
+    --shadow-color: #fff;
+    --focus-color-card-button: #000;
+    -bg-color-btn: #fff;
+    --color-btn-before: #000;
+    --color-btn-span: #fff;
+
+    --color-usual: #000;
+    --color-accent: #FF0000;
+    --hover-heart-icon: #000;
+
+    --dialog-color: #000;
+}

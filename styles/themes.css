@@ -4,3 +4,123 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    --text-color: #000000;
+    --bg-color: #fff;
+    --background:
+    repeating-linear-gradient(180deg, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+    --header-border: 2px solid #000;
+    --border: 2px solid #000;
+    --hover-color-text: #000000;
+    --main-fonts: "Inter-Flex-Variable";
+    --accent-fonts: "Press Start 2P";
+    --disablet-color: rgba(0, 0, 0, 0.6);
+    --hover-menu-button: rgba(0, 0, 0, 0.6);
+    --focus-color-element:rgba(0, 0, 0, 0.6);
+    --shadow-color: #fff;
+    --focus-color-card-button: #000;
+
+    --bg-color-btn: #fff;
+    --color-btn-before: #000;
+    --color-btn-span: #fff;
+
+    --color-usual: #000;
+    --color-accent: #FF0000;
+    --hover-heart-icon: #000;
+
+    --dialog-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #000000;
+        --bg-color: #fff;
+        --background:
+        repeating-linear-gradient(180deg, #d3d3d3, transparent 2px),
+        repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+        linear-gradient(#e7e7e7, #1a1a1a);
+        --header-border: 2px solid #000;
+        --border: 2px solid #000;
+        --hover-color-text: #000000;
+        --main-fonts: "Inter-Flex-Variable";
+        --accent-fonts: "Press Start 2P";
+        --disablet-color: rgba(0, 0, 0, 0.6);
+        --hover-menu-button: rgba(0, 0, 0, 0.6);
+        --focus-color-element:rgba(0, 0, 0, 0.6);
+        --shadow-color: #fff;
+        --focus-color-card-button: #000;
+
+        --bg-color-btn: #fff;
+        --color-btn-before: #000;
+        --color-btn-span: #fff;
+
+        --color-usual: #000;
+        --color-accent: #FF0000;
+        --hover-heart-icon: #000;
+
+        --dialog-color: #000;
+    }
+  }
+
+:root.theme-dark {
+    --text-color: #00CC14;
+    --bg-color: #000000;
+    --background:
+    repeating-linear-gradient(180deg, #000, transparent 2px),
+    repeating-linear-gradient(90deg, #000, transparent 2px),
+    linear-gradient(#007f0c, #004306);
+    --header-border: 2px solid #00CC14;
+    --border: 2px solid #00CC14;
+    --hover-color-text: #000000;
+    --main-fonts: "Inter-Flex-Variable";
+    --accent-fonts: "Press Start 2P";
+    --disablet-color: rgba(0, 204, 20, 0.6);
+    --hover-menu-button: rgba(0, 204, 20, 0.6);
+    --focus-color-element:rgba(0, 204, 20, 0.6);
+    --shadow-color: #000;
+    --focus-color-card-button: #00CC14;
+
+    --bg-color-btn: #000;
+    --color-btn-before: #00CC14;
+    --color-btn-span: #00CC14;
+
+    --color-usual: #00CC14;
+    --color-accent: #00CC14;
+    --hover-heart-icon: #00CC14;
+
+    --dialog-color: #00CC14;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #00CC14;
+        --bg-color: #000000;
+        --background:
+        repeating-linear-gradient(180deg, #000, transparent 2px),
+        repeating-linear-gradient(90deg, #000, transparent 2px),
+        linear-gradient(#007f0c, #004306);
+        --header-border: 2px solid #00CC14;
+        --border: 2px solid #00CC14;
+        --hover-color-text: #000000;
+        --main-fonts: "Inter-Flex-Variable";
+        --accent-fonts: "Press Start 2P";
+        --disablet-color: rgba(0, 204, 20, 0.6);
+        --hover-menu-button: rgba(0, 204, 20, 0.6);
+        --focus-color-element:rgba(0, 204, 20, 0.6);
+        --shadow-color: #000;
+        --focus-color-card-button: #00CC14;
+
+        --bg-color-btn: #000;
+        --color-btn-before: #00CC14;
+        --color-btn-span: #00CC14;
+
+        --color-usual: #00CC14;
+        --color-accent: #00CC14;
+        --hover-heart-icon: #00CC14;
+
+        --dialog-color: #00CC14;
+    }
+  }
