@@ -177,7 +177,7 @@
 
 /* Настройка Main */
 
-.main {
+.main__content {
   display: flex;
   flex-direction: column;
   row-gap: 50px;
