@@ -52,6 +52,13 @@
   mix-blend-mode: difference;
 }
 
+.main__button .icon{
+  position: relative;
+  color: var(--color-btn-span);
+  font-weight: 400;
+  mix-blend-mode: difference;
+}
+
 /* Focus эффекты у кнопки */
 .main__button:focus {
   outline: none;
@@ -88,14 +95,15 @@
   margin-block-end: 100px;
 }
 
-.header__title {
+.header__logo {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   line-height: 65px;
   font-family: var(--accent-fonts), sans-serif;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.header__subtitle {
+.header__title {
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   line-height: 23px;
   font-family: var(--accent-fonts), sans-serif;
@@ -187,6 +195,8 @@
 
 /* Настройка title карточки */
 .card__title {
+  background-color: var(--bg-color);
+  padding-left: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 33px;  
@@ -298,35 +308,20 @@
   height: 38px;
 }
 
-.like-icon .main-body {
-  transition: fill 0.3s;
-}
-
-.like-icon .core {
-  transition: fill 0.3s;
-  transition-delay: 0.03s;
-}
-
 .like-icon:hover .main-body {
   fill: var(--hover-heart-icon);
-  transition: fill 0.3s;
-  transition-delay: 0.05s;
 } 
 
 .like-icon:hover .core {
   fill: var(--hover-heart-icon);
-  transition: fill 0.3s;
 } 
 
 .like-icon:active .main-body {
   fill: var(--color-accent);
-  transition: fill 0.3s;
-  transition-delay: 0.05s;
 } 
 
 .like-icon:active .core {
   fill: var(--color-accent);
-  transition: fill 0.3s;
 } 
 
 /* Настройка состояния focus для иокнки с сердечком */
@@ -337,6 +332,7 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -352,50 +348,26 @@
 
 .like-icon.is-liked .contour {
   fill: var(--color-accent);
-  transition: fill 0.3s ease-in-out;
-  transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--color-accent);
-  transition: fill 0.3s ease-in-out;
-  transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--color-accent);
-  transition: fill 0.3s ease-in-out;
-  transition-delay: 0.06s;
-}
-
-.like-icon.is-liked .heart {
-  animation-name: heart-scale;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-delay: 0.1s;
-}
-
-.like-icon.is-liked .sparks {
-  animation-name: heart-sparks;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-delay: 0.3s;
 }
 
 /* Настройка кнопки в Footer */
 
-.footer {
+.main__lower-btn {
   display: flex;
   justify-content: center;
   margin-block-start: 50px;
   margin-block-end: 100px;
 }
 
-.footer__btn {
+.lower__botton {
   display: flex;
   align-items: center;
   column-gap: 10px;;
@@ -403,13 +375,13 @@
   transition: box-shadow 0.3s;
 } 
 
-.footer__btn-icon .icon{
+.main__button .icon{
   fill:  var(--color-btn-span);
   width: 21px;
   height: 21px;
 }
 
-.footer__botton-text {
+.lower__btn-text {
   font-size: 14px;
   font-family: var(--accent-fonts),sans-serif;
 }
@@ -417,7 +389,7 @@
 /* Настройка Dialog */
 
 dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .dialog__main {
@@ -445,6 +417,8 @@ dialog[open] {
   font-size: 14px;
   font-family: var(--accent-fonts);
   text-transform: uppercase;
+  max-width: 200px;
+  width: 100%;
 }
 
 .dialog__main .icon{
