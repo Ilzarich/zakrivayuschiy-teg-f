@@ -49,6 +49,10 @@
   .like-icon .main-body {
     transition: fill 0.3s linear;
   }
+
+  .like-icon .contour {
+    transition: fill 0.1s linear;
+  }
   
   .like-icon .core {
     transition: fill 0.3s linear;
@@ -85,10 +89,12 @@
   
   .like-icon.is-liked .main-body {
     transition: fill 0.3s linear;
+    transition-delay: 0.05s;
   }
   
   .like-icon.is-liked .core {
     transition: fill 0.3s linear;
+    transition-delay: 0.05s;
   }
   
   .like-icon.is-liked .heart {

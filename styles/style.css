@@ -16,7 +16,7 @@
 
 /* Общие настройки для кнопок на сайте */
 .main__button {
-  background-color: var(--bg-color-btn);
+  background-color: var(--bg-color-btn, #000);
   border: var(--border);
   font-size: 14px;
   font-family: var(--accent-fonts);
@@ -73,7 +73,7 @@
   min-block-size: 100dvb;
   max-inline-size: 700px;
   margin-inline: auto;
-  background-color: #fff;
+  background-color: var(--bg-color);
   background-image: var(--background);
   background-attachment: fixed;
   background-size: cover;
@@ -193,10 +193,11 @@
 
 /* Настройка title карточки */
 .card__title {
-  font-variation-settings: "wght" 700;
+  font-variation-settings: var(--font-weight-title);
   padding-left: 10px;
   font-size: 18px;
   line-height: 33px;  
+  border-bottom: var(--border);
 }
 
 /* Настройка картинки в карточке */
@@ -244,6 +245,12 @@
 }
 
 /* Настройка надписи на картинке */
+@supports ( -webkit-text-stroke: 1px var(--shadow-color)) {
+  .watermark  {
+    -webkit-text-stroke: 1px var(--shadow-color);
+  }
+}
+
 .watermark {
   position: absolute;
   top: 23px;
@@ -251,10 +258,9 @@
   z-index: 1;
   font-family: var(--accent-fonts), sans-serif;
   font-size: 14px;
-  line-height: 22.09px;
+  font-weight: 400;
   opacity: 0.5;
-  text-shadow: none;
-  -webkit-text-stroke: 1px var(--shadow-color);
+  text-shadow: 1px 1px var(--shadow-color);
 }
 
 /* Настройка фона у текста*/
@@ -267,13 +273,14 @@
   display: flex;
   flex-direction: column;
   row-gap: 27px;
-  padding-block-start: 27px;
+  padding-block-start: 24px;
   padding-inline-start: 25px;
 }
 
 /* Настройка текста в карточке */
 .card__context-text {
   font-size: 18px;
+  font-variation-settings: var(--font-weight-text);
   line-height: 21px;
   max-width: 646px;
 }
@@ -292,7 +299,6 @@
 .card__like-button {
   width: 130px;
   height: 38px;
-  transition: box-shadow 0.3s;
 }
 
 /* Настройка иконки сердечка состояние hover и active*/
@@ -369,7 +375,6 @@
   align-items: center;
   column-gap: 10px;;
   padding: 15px 20px;
-  transition: box-shadow 0.3s;
 } 
 
 .main__button .icon{
@@ -444,18 +449,17 @@ dialog[open] {
   }
 
   .main__content {
-    row-gap: 52px;
+    row-gap: 51px;
   }
 
   .card__title {
-    max-width: 320px;
-    line-height: 28px;
-  }
-
-  .mobil-height {
     padding-block-start: 6px;
     padding-block-end: 5px;
     line-height: 20px;
+  }
+
+  .crad__context {
+    padding-block-start: 23px;
   }
 
   .watermark {
@@ -464,11 +468,11 @@ dialog[open] {
   }
 
   .card__context-text {
-    max-width: 320px;
+    max-width: 322px;
   }
 
-  .card__context-max-w-mobil {
-    max-width: 317px;
+  article:nth-child(7) .card__context-text{
+    max-width: 318px;
   }
 
   .lower__botton {

@@ -33,6 +33,9 @@
     --hover-heart-icon: #000;
 
     --dialog-color: #000;
+
+    --font-weight-title: "wght" 700;
+    --font-weight-text: "wght" 400;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,6 +67,9 @@
         --hover-heart-icon: #000;
 
         --dialog-color: #000;
+
+        --font-weight-title: "wght" 700;
+        --font-weight-text: "wght" 400;
     }
   }
 
@@ -95,6 +101,9 @@
     --hover-heart-icon: #00CC14;
 
     --dialog-color: #00CC14;
+
+    --font-weight-title: "wght" 785;
+    --font-weight-text: "wght" 465;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -126,5 +135,8 @@
         --hover-heart-icon: #00CC14;
 
         --dialog-color: #00CC14;
+
+        --font-weight-title: "wght" 785;
+        --font-weight-text: "wght" 465;
     }
   }

@@ -26,4 +26,7 @@
     --hover-heart-icon: #000;
 
     --dialog-color: #000;
+
+    --font-weight-title: "wght" 700;
+    --font-weight-text: "wght" 400;
 }
